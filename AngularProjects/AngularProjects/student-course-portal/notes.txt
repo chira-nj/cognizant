@@ -1,0 +1,63 @@
+Angular Hands-On 1 - Notes
+
+1. angular.json
+This file contains the Angular workspace configuration such as build, serve, test, assets, styles, and production settings.
+
+2. tsconfig.json
+This is the main TypeScript configuration file used by the Angular project.
+
+3. tsconfig.app.json
+This file contains TypeScript compiler settings specifically for the Angular application.
+
+4. package.json
+This file contains project information, npm scripts, dependencies, and Angular package versions.
+
+5. src/main.ts
+This is the entry point of the Angular application. It starts the application by bootstrapping the root component.
+
+6. src/app/app.config.ts
+This file contains the application configuration and providers for the standalone Angular application.
+
+7. src/app/app.ts
+This file defines the root Angular component and contains its TypeScript code.
+
+8. src/index.html
+This is the main HTML page that loads the Angular application in the browser.
+Build Output
+
+The ng build command creates the dist folder.
+
+The compiled Angular application code is stored in the main-0Z2T5IEA.js file.
+
+index.html is the entry HTML page.
+
+polyfills-5CFQRCPP.js provides browser compatibility.
+
+styles-5INURTSO.css contains the application's global styles.
+Budget Configuration
+
+maximumWarning:
+Shows a warning when the application bundle size exceeds the specified limit.
+
+maximumError:
+Stops the build if the bundle size exceeds the specified limit.
+--------------------------------------------
+Budget Configuration
+
+The budgets configuration controls the maximum size of the application bundles generated during the build.
+
+Initial Bundle:
+maximumWarning: 500kB
+maximumError: 1MB
+
+Meaning:
+• maximumWarning (500kB): Angular displays a warning if the initial application bundle exceeds 500kB, but the build still completes.
+• maximumError (1MB): Angular stops the build if the initial application bundle exceeds 1MB.
+
+Component Style Bundle:
+maximumWarning: 4kB
+maximumError: 8kB
+
+Meaning:
+• maximumWarning (4kB): Angular displays a warning if any component's CSS file exceeds 4kB.
+• maximumError (8kB): Angular stops the build if any component's CSS file exceeds 8kB.
